@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Creación de la clase "Surface" | SdA Propuesta para el alumnado </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Julio Pedro López Bayón" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="stylesheet" href="prism.css">
+	</head>
+<body class="exe-web-site" id="exe-node-9"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">SdA Propuesta para el alumnado</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Desarrollo de un videojuego con Java</a></li>
+   <li class="current-page-parent"><a href="prctica_guiada.html" class="current-page-parent daddy">Práctica Guiada</a>
+   <ul>
+      <li><a href="creacin_de_la_clase_ball.html" class="no-ch">Creación de la clase "Ball"</a></li>
+      <li id="active"><a href="creacin_de_la_clase_surface.html" class="active no-ch">Creación de la clase "Surface"</a></li>
+      <li><a href="creacin_de_la_clase_main.html" class="no-ch">Creación de la clase "Main"</a></li>
+      <li><a href="ejercicios_complementarios.html" class="no-ch">Ejercicios complementarios</a></li>
+   </ul>
+   </li>
+   <li><a href="propuesta_de_videojuego.html" class="no-ch">Propuesta de videojuego</a></li>
+   <li><a href="recursos.html" class="no-ch">Recursos</a></li>
+   <li><a href="infografa.html" class="no-ch">Infografía</a></li>
+   <li><a href="rbrica_de_evaluacin.html" class="no-ch">Rúbrica de evaluación</a></li>
+   <li><a href="diccionario_de_trminos.html" class="no-ch">Diccionario de términos</a></li>
+   <li><a href="atribucin_y_descarga_del_elp.html" class="no-ch">Atribución y descarga del ELP</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="creacin_de_la_clase_ball.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="creacin_de_la_clase_main.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Creación de la clase "Surface"</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id21">
+<div class="iDevice emphasis0" >
+<div id="ta21_129_2" class="block iDevice_content">
+<div class="exe-text"><p>Creamos la clase Surface según las especificaciones siguientes:</p>
+<ul>
+<li>El constructor establece las dimensiones que va a tener este <a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JComponent.html"><code>JComponent</code></a> dentro de la ventana principal mediante los parámetros de inicialización, crea la bola que se moverá por su superficie y crea una imagen bitmap en la memoria que usaremos de para evitar el flickering (parpadeo) durante la animación (esta no es una solución válida y sólo la usaremos de forma temporal).</li>
+<li>Esta clase implementa la interface <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html"><code>Runnable</code></a> para crear un nuevo hilo que se encargará de la animación de la bola. Ésta se implementa, por tanto, en el método <code>run</code> y consiste básicamente en un bucle en el que se calcula el lapso de tiempo transcurrido entre cada frame y se invoca a los métodos encargados de generar cada uno de ellos: <code>next</code> y <code>drawFrame</code>.</li>
+<li>Los métodos <code>start</code>, <code>stop</code>, <code>pause</code> e <code>isPaused</code> son los encargados de implementar la creación del hilo, su detención y la posibilidad de pausar su ejecución. En este documento no se profundizará en los detalles técnicos de la creación y gestión de hilos, ya que todo ello se estudia en el módulo de Programación de Servicios y Procesos del segundo curso.</li>
+<li>El método <code>next</code> es el encargado de actualizar el estado de los elementos que intervienen en la animación para generar el siguiente frame de la misma. Para ello recibe el tiempo transcurrido en nanosegundos desde que se generó el frame anterior.</li>
+<li>El método <code>drawFrame</code> es el encargado de implementar la técnica de rendering activo. Esta técnica consiste en la ejecución de los tres pasos siguientes:
+<ul>
+<li>Obtener el contexto gráfico en el que se va a dibujar la escena.</li>
+<li>Invocar al método <code>paintComponent</code> para que dibuje la escena.</li>
+<li>Liberar los recursos utilizados por el contexto gráfico.  </li>
+</ul>
+</li>
+<li>El método <code>paintComponent</code> se redefine para dibujar la escena. En primer lugar, se dibuja en la imagen bitmap que usamos como buffer y después se dibuja esta imagen en la pantalla.</li>
+</ul></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id22">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Código fuente</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta22_130_2" class="block iDevice_content">
+<div class="exe-text"><div>
+<pre><code class="language-java line-numbers">public class Surface extends Canvas {
+	private static final long serialVersionUID = 1L;
+	private Thread t;
+	private boolean paused;
+	private Ball ball;
+	
+	public Surface(int w, int h) {
+		setPreferredSize(new Dimension(w, h));
+		setBackground(Color.BLACK);
+		ball = new Ball(this, (w - 15) / 2d, (h - 15) / 2d, 15, 45d, 300d, Color.WHITE);
+	}
+
+	private void run() {
+		long t0 = System.nanoTime(), t1;
+		while (!Thread.currentThread().isInterrupted()) {
+			synchronized (this) {
+				if (paused) {
+					try {
+						wait();
+					} catch (InterruptedException e) {
+						Thread.currentThread().interrupt();
+					}
+					t0 = System.nanoTime();
+				}
+			}
+			next((t1 = System.nanoTime()) - t0);
+			drawFrame();
+			t0 = t1;
+		}
+	}
+
+	public void start() {
+		t = new Thread(this::run);
+		t.start();
+	}
+
+	public void stop() {
+		t.interrupt();
+		try {
+			t.join();
+		} catch (InterruptedException e) {
+		}
+	}
+
+	public synchronized void pause() {
+		paused = true;
+	}
+
+	public synchronized void resume() {
+		if (paused) {
+			paused = false;
+			notify();
+		}
+	}
+
+	public synchronized boolean isPaused() {
+		return paused;
+	}
+
+	private void next(long lapse) {
+		ball.move(lapse);
+	}
+
+	private void drawFrame() {
+		Graphics g = getGraphics();
+		paint(g);
+		g.dispose();
+	}
+
+	@Override
+	public void paint(Graphics g) {
+		Graphics2D g2d = (Graphics2D) g;
+		g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+		g2d.setColor(getBackground());
+		g2d.fillRect(0, 0, getWidth(), getHeight());
+		ball.paint(g2d);
+	}
+}</code></pre>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="creacin_de_la_clase_ball.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="creacin_de_la_clase_main.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="my_js.js"></script><script type="text/javascript" src="prism.js"></script></body></html>

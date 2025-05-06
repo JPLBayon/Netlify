@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Creación de la clase "Ball" | SdA Propuesta para el alumnado </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Julio Pedro López Bayón" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="stylesheet" href="prism.css">
+	</head>
+<body class="exe-web-site" id="exe-node-8"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">SdA Propuesta para el alumnado</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Desarrollo de un videojuego con Java</a></li>
+   <li class="current-page-parent"><a href="prctica_guiada.html" class="current-page-parent daddy">Práctica Guiada</a>
+   <ul>
+      <li id="active"><a href="creacin_de_la_clase_ball.html" class="active no-ch">Creación de la clase "Ball"</a></li>
+      <li><a href="creacin_de_la_clase_surface.html" class="no-ch">Creación de la clase "Surface"</a></li>
+      <li><a href="creacin_de_la_clase_main.html" class="no-ch">Creación de la clase "Main"</a></li>
+      <li><a href="ejercicios_complementarios.html" class="no-ch">Ejercicios complementarios</a></li>
+   </ul>
+   </li>
+   <li><a href="propuesta_de_videojuego.html" class="no-ch">Propuesta de videojuego</a></li>
+   <li><a href="recursos.html" class="no-ch">Recursos</a></li>
+   <li><a href="infografa.html" class="no-ch">Infografía</a></li>
+   <li><a href="rbrica_de_evaluacin.html" class="no-ch">Rúbrica de evaluación</a></li>
+   <li><a href="diccionario_de_trminos.html" class="no-ch">Diccionario de términos</a></li>
+   <li><a href="atribucin_y_descarga_del_elp.html" class="no-ch">Atribución y descarga del ELP</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="prctica_guiada.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="creacin_de_la_clase_surface.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Creación de la clase "Ball"</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id20">
+<div class="iDevice emphasis0" >
+<div id="ta20_128_2" class="block iDevice_content">
+<div class="exe-text"><p>Creamos la clase <code>Ball</code> según las especificaciones siguientes:</p>
+<ul>
+<li>El constructor aceptará los parámetros siguientes para inicializar el estado de las instancias de la clase:
+<ul>
+<li><code>surface</code>: referencia al componente en cuya superficie tendrá lugar la animación, necesaria para que la bola conozca las dimensiones de dicha superficie.</li>
+<li><code>x</code>: coordenada x de la esquina superior izquierda del cuadrado donde se inscribe la bola.</li>
+<li><code>y</code>: coordenada y de la esquina superior izquierda del cuadrado donde se inscribe la bola.</li>
+<li><code>size</code>: diámetro de la bola.</li>
+<li><code>direction</code>: dirección inicial en la que se moverá la bola, que representa un ángulo expresado en grados sexagesimales.</li>
+<li><code>speed</code>: velocidad a la que se mueve la bola en píxeles por segundo.</li>
+<li><code>color</code>: color con el que se dibujará la bola.
+<p>Estos parámetros se usarán para inicializar las propiedades del mismo nombre, excepto <code>direction</code> y <code>speed</code> que se usarán para inicializar las componentes x e y de la velocidad: propiedades <code>vx</code> y <code>vy</code>.</p>
+</li>
+</ul>
+</li>
+<li>El método move actualiza la posición de la bola para cada frame de la animación, calculando el valor que se debe asignar a las propiedades x e y para conseguir el efecto de movimiento. Dicha actualización se calculará en función de vx, vy y la cantidad de nanosegundos (parámetro lapse) que han transcurrido entre el frame actual y el anterior.</li>
+<li>El método paint dibuja la escena con la bola en su posición actual.</li>
+</ul></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id19">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Código fuente</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta19_127_2" class="block iDevice_content">
+<div class="exe-text"><div>
+<pre><code class="language-java line-numbers">public class Ball {
+	private Surface surface;
+	private int size;
+	private double x;
+	private double y;
+	private double vx;
+	private double vy;
+	private Color color;
+
+	public Ball(Surface surface, double x, double y, int size, double direction, double speed, Color color) {
+		this.x = x;
+		this.y = y;
+		this.size = size;
+		vx = Math.cos(direction) * speed;
+		vy = Math.sin(direction) * speed;
+		this.surface = surface;
+		this.color = color;
+	}
+
+	public void paint(Graphics2D g) {
+		g.setColor(color);
+		g.fillOval((int) x, (int) y, (int) size, size);
+	}
+
+	public void move(long lapse) {
+		x += (lapse * vx) / 1000000000L;
+		y += (lapse * vy) / 1000000000L;
+		if (x + size &gt;= surface.getWidth()) {
+			x = 2 * surface.getWidth() - x - 2 * size;
+			vx *= -1;
+		} else if (x &lt; 0) {
+			x = -x;
+			vx *= -1;
+		} else if (y + size &gt;= surface.getHeight()) {
+			y = 2 * surface.getHeight() - y - 2 * size;
+			vy *= -1;
+		} else if (y &lt; 0) {
+			y = -y;
+			vy *= -1;
+		}
+	}
+}    
+</code></pre>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="prctica_guiada.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="creacin_de_la_clase_surface.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="my_js.js"></script><script type="text/javascript" src="prism.js"></script></body></html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Práctica Guiada | SdA Propuesta para el alumnado </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Julio Pedro López Bayón" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="stylesheet" href="prism.css">
+	</head>
+<body class="exe-web-site" id="exe-node-2"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">SdA Propuesta para el alumnado</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Desarrollo de un videojuego con Java</a></li>
+   <li id="active"><a href="prctica_guiada.html" class="active daddy">Práctica Guiada</a>
+   <ul>
+      <li><a href="creacin_de_la_clase_ball.html" class="no-ch">Creación de la clase "Ball"</a></li>
+      <li><a href="creacin_de_la_clase_surface.html" class="no-ch">Creación de la clase "Surface"</a></li>
+      <li><a href="creacin_de_la_clase_main.html" class="no-ch">Creación de la clase "Main"</a></li>
+      <li><a href="ejercicios_complementarios.html" class="no-ch">Ejercicios complementarios</a></li>
+   </ul>
+   </li>
+   <li><a href="propuesta_de_videojuego.html" class="no-ch">Propuesta de videojuego</a></li>
+   <li><a href="recursos.html" class="no-ch">Recursos</a></li>
+   <li><a href="infografa.html" class="no-ch">Infografía</a></li>
+   <li><a href="rbrica_de_evaluacin.html" class="no-ch">Rúbrica de evaluación</a></li>
+   <li><a href="diccionario_de_trminos.html" class="no-ch">Diccionario de términos</a></li>
+   <li><a href="atribucin_y_descarga_del_elp.html" class="no-ch">Atribución y descarga del ELP</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="index.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="creacin_de_la_clase_ball.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Práctica Guiada</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id0">
+<div class="iDevice emphasis0" >
+<div id="ta0_127_2" class="block iDevice_content">
+
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id4">
+<div class="iDevice emphasis0" >
+<div id="ta4_128_2" class="block iDevice_content">
+<div class="exe-text"><p>El objetivo de esta práctica es desarrollar una aplicación que sirva como base para el desarrollo de videojuegos con <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/swing/index.html">Java Swing</a> y <a href="https://www.oracle.com/java/technologies/java-2d-api.html">Java 2D</a>.</p>
+<p>La aplicación va a consistir en la animación de una bola que se desplaza a velocidad constante sobre una superficie rectangular, rebotando cuando choca con los bordes. Para completar su desarrollo vamos a crear tres clases:</p>
+<ul>
+<li>Clase <code>Main</code>: contiene el punto de entrada a la aplicación, desde el que se lanza el proceso que llevará a cabo la creación y visualización de la ventana principal y el inicio de la animación.</li>
+<li>Clase <code>Surface</code>: extenderá a la clase <a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JComponent.html"><code>JComponent</code></a> para crear la superficie sobre la que se desplazará la bola y que se añadirá a la ventana principal sustituyendo al panel de contenido. En esta clase también se implementará la animación con una técnica denominada rendering activo provista por el API de <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/swing/index.html">Java Swing</a> y <a href="https://www.oracle.com/java/technologies/java-2d-api.html">Java 2D</a>.</li>
+<li>Clase <code>Ball</code>: para crear la bola que se moverá por la superficie.</li>
+</ul>
+<p>Antes de comenzar con el desarrollo de la aplicación, vamos a ver una breve introducción a la clase <a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Graphics2D.html">Graphics2D </a>del API de <a href="https://www.oracle.com/java/technologies/java-2d-api.html">Java 2D</a>. Esta clase representa el contexto gráfico de componentes de Swing e imágenes bitmap almacenadas en la memoria, y encapsula la información y funcionalidad necesaria para realizar sobre ellos todas las operaciones de renderizado soportadas por <a href="https://www.oracle.com/java/technologies/java-2d-api.html">Java 2D</a>.</p>
+<p>El contexto gráfico consiste en una imagen rectangular formada por un conjunto de píxeles que se localizan mediante un sistema de coordenadas cartesianas con el eje y invertido y el origen de coordenadas situado en la esquina superior izquierda:</p>
+<p style="text-align: center;"><img src="img0.png" width="413" height="254" alt="Contexto gráfico de los componentes de Java Swing." /></p>
+<p>La clase <a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Graphics2D.html"><code>Graphics2D</code></a> proporciona primitivas de dibujo para dibujar una gran variedad de formas geométricas. Por ejemplo, suponiendo que <code>g</code> es una variable que referencia al objeto <a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Graphics2D.html"><code>Graphics2D</code></a> que representa el contexto gráfico del content pane de un <a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JFrame.html"><code>JFrame</code></a>, cuyo tamaño es de 650x450 píxeles, la sentencia siguiente dibujará un círculo con un diámetro de 50 píxeles centrado en dicho panel:</p>
+<p style="text-align: center;"><img src="captura_desde_2025_05_05_12_16_48.png" width="800" height="291" /></p>
+<p>Ahora que conocemos algunos detalles básicos acerca del API de <a href="https://www.oracle.com/java/technologies/java-2d-api.html">Java 2D</a>, vamos a comenzar el desarrollo de la aplicación creando un repositorio de Git:</p>
+<ul>
+<li>Crea un repositorio en GitHub que contenga los ficheros <code>README.md</code> y <code>.gitignore</code>.</li>
+<li>Clona este repositorio desde Eclipse y crea un proyecto en él.</li>
+<li>Crea en este proyecto el paquete <code>java.fp.dam.java2d</code> y dentro de él las clases que se describen a continuación.</li>
+</ul></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="index.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="creacin_de_la_clase_ball.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="my_js.js"></script><script type="text/javascript" src="prism.js"></script></body></html>
