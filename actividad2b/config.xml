@@ -11,7 +11,6 @@
 	<langs lang="en">
 		<description>This theme was originally created for "Formación Profesional a través de internet y online", Ministerio de Educación, Cultura y Deporte (Spanish Government). Adapted by Ignacio Gros.</description>
 	</langs>
-	<extra-head><![CDATA[<meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="stylesheet" href="prism.css">
-	]]></extra-head>
-	<extra-body><![CDATA[<script type="text/javascript" src="my_js.js"></script><script type="text/javascript" src="prism.js"></script>]]></extra-body>	
+	<extra-head><![CDATA[<meta name="viewport" content="width=device-width, initial-scale=1" />]]></extra-head>
+	<extra-body><![CDATA[<script type="text/javascript" src="my_js.js"></script>]]></extra-body>	
 </theme>

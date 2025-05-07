@@ -187,7 +187,7 @@
 &lt;li&gt;Sesión 4 (dos horas): corrección de los ejercicios, aclaración de dudas y refuerzo de los conocimientos adquiridos con explicaciones a cargo del profesor-a.&lt;/li&gt;
 &lt;li&gt;Sesión 5 (dos horas): esta sesión estará dedicada a la realización de las siguientes actividades:
 &lt;ul&gt;
-&lt;li&gt;Exposición de la propuesta del profesor-a de un videojuego, con demostración de funcionamiento a través del proyector del aula.&lt;/li&gt;
+&lt;li&gt;Propuesta del profesor-a con de un videojuego con demostración de funcionamiento a través del proyector del aula.&lt;/li&gt;
 &lt;li&gt;Formación de grupos para el desarrollo del proyecto.&lt;/li&gt;
 &lt;li&gt;Reunión por grupos para la debatir sobre propuestas alternativas que concluirá con la adopción de una decisión final acerca de qué producto final se desarrollará.&lt;/li&gt;
 &lt;/ul&gt;
@@ -510,7 +510,7 @@
                    <instance class="exe.engine.field.TextField">
                     <dictionary>
                      <string role="key" value="_id"></string>
-                     <int value="288"></int>
+                     <int value="297"></int>
                      <string role="key" value="_idevice"></string>
                      <none></none>
                      <string role="key" value="_instruc"></string>
@@ -524,7 +524,7 @@
                     </dictionary>
                    </instance>
                    <string role="key" value="_id"></string>
-                   <unicode value="4_128_2.8"></unicode>
+                   <unicode value="4_128_2.10"></unicode>
                    <string role="key" value="_imageResource"></string>
                    <instance class="exe.engine.resource.Resource" reference="10">
                     <dictionary>
@@ -535,7 +535,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="captura_desde_2025_05_05_12_16_48.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpqV8izw/captura_desde_2025_05_05_12_16_48.png"></string>
+                     <string value="/tmp/tmp483oTS/captura_desde_2025_05_05_12_16_48.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="4e67fa58878a3558b74e201709adc214"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -562,7 +562,7 @@
                    <instance class="exe.engine.field.TextField">
                     <dictionary>
                      <string role="key" value="_id"></string>
-                     <int value="289"></int>
+                     <int value="298"></int>
                      <string role="key" value="_idevice"></string>
                      <none></none>
                      <string role="key" value="_instruc"></string>
@@ -576,7 +576,7 @@
                     </dictionary>
                    </instance>
                    <string role="key" value="_id"></string>
-                   <unicode value="4_128_2.9"></unicode>
+                   <unicode value="4_128_2.11"></unicode>
                    <string role="key" value="_imageResource"></string>
                    <instance class="exe.engine.resource.Resource" reference="11">
                     <dictionary>
@@ -587,7 +587,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="img0.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpqV8izw/img0.png"></string>
+                     <string value="/tmp/tmp483oTS/img0.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="da2fab58ae6b5449c758b84e3a9f7b9b"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -616,7 +616,7 @@
               <string role="key" value="intlinks_to_anchors"></string>
               <dictionary></dictionary>
               <string role="key" value="nextImageId"></string>
-              <int value="10"></int>
+              <int value="12"></int>
               <string role="key" value="parentNode"></string>
               <reference key="7"></reference>
              </dictionary>
@@ -765,8 +765,8 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;El método move actualiza la posición de la bola para cada frame de la animación, calculando el valor que se debe asignar a las propiedades x e y para conseguir el efecto de movimiento. Dicha actualización se calculará en función de vx, vy y la cantidad de nanosegundos (parámetro lapse) que han transcurrido entre el frame actual y el anterior.&lt;/li&gt;
-&lt;li&gt;El método paint dibuja la escena con la bola en su posición actual.&lt;/li&gt;
+&lt;li&gt;El método &lt;code&gt;move&lt;/code&gt; actualiza la posición de la bola para cada frame de la animación, calculando el valor que se debe asignar a las propiedades &lt;code&gt;x&lt;/code&gt; e &lt;code&gt;y&lt;/code&gt; para conseguir el efecto de movimiento. Dicha actualización se calculará en función de &lt;code&gt;vx&lt;/code&gt;, &lt;code&gt;vy&lt;/code&gt; y la cantidad de nanosegundos (parámetro &lt;code&gt;lapse&lt;/code&gt;) que han transcurrido entre el frame actual y el anterior.&lt;/li&gt;
+&lt;li&gt;El método &lt;code&gt;paint&lt;/code&gt; dibuja la escena con la bola en su posición actual.&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;"></unicode>
                  <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
                  <int value="4"></int>
@@ -2599,7 +2599,7 @@
                    <instance class="exe.engine.field.TextField">
                     <dictionary>
                      <string role="key" value="_id"></string>
-                     <int value="286"></int>
+                     <int value="295"></int>
                      <string role="key" value="_idevice"></string>
                      <none></none>
                      <string role="key" value="_instruc"></string>
@@ -2613,7 +2613,7 @@
                     </dictionary>
                    </instance>
                    <string role="key" value="_id"></string>
-                   <unicode value="31_128_2.8"></unicode>
+                   <unicode value="31_128_2.9"></unicode>
                    <string role="key" value="_imageResource"></string>
                    <instance class="exe.engine.resource.Resource" reference="43">
                     <dictionary>
@@ -2624,7 +2624,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="BolasLocas1.webm"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpqV8izw/BolasLocas1.webm"></string>
+                     <string value="/tmp/tmp483oTS/BolasLocas1.webm"></string>
                      <string role="key" value="checksum"></string>
                      <string value="42194c893801b4f920192e6f62f828fb"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2653,7 +2653,7 @@
               <string role="key" value="intlinks_to_anchors"></string>
               <dictionary></dictionary>
               <string role="key" value="nextImageId"></string>
-              <int value="9"></int>
+              <int value="10"></int>
               <string role="key" value="parentNode"></string>
               <reference key="40"></reference>
              </dictionary>
@@ -2809,7 +2809,7 @@
                    <instance class="exe.engine.field.TextField">
                     <dictionary>
                      <string role="key" value="_id"></string>
-                     <int value="283"></int>
+                     <int value="292"></int>
                      <string role="key" value="_idevice"></string>
                      <none></none>
                      <string role="key" value="_instruc"></string>
@@ -2823,7 +2823,7 @@
                     </dictionary>
                    </instance>
                    <string role="key" value="_id"></string>
-                   <unicode value="32_129_2.17"></unicode>
+                   <unicode value="32_129_2.22"></unicode>
                    <string role="key" value="_imageResource"></string>
                    <instance class="exe.engine.resource.Resource" reference="46">
                     <dictionary>
@@ -2834,7 +2834,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="BolasLocas5.webm"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpqV8izw/BolasLocas5.webm"></string>
+                     <string value="/tmp/tmp483oTS/BolasLocas5.webm"></string>
                      <string role="key" value="checksum"></string>
                      <string value="9d68e09ef59291ee5187bad0318d6051"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2861,7 +2861,7 @@
                    <instance class="exe.engine.field.TextField">
                     <dictionary>
                      <string role="key" value="_id"></string>
-                     <int value="284"></int>
+                     <int value="293"></int>
                      <string role="key" value="_idevice"></string>
                      <none></none>
                      <string role="key" value="_instruc"></string>
@@ -2875,7 +2875,7 @@
                     </dictionary>
                    </instance>
                    <string role="key" value="_id"></string>
-                   <unicode value="32_129_2.18"></unicode>
+                   <unicode value="32_129_2.23"></unicode>
                    <string role="key" value="_imageResource"></string>
                    <instance class="exe.engine.resource.Resource" reference="47">
                     <dictionary>
@@ -2886,7 +2886,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="BolasLocas3.webm"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpqV8izw/BolasLocas3.webm"></string>
+                     <string value="/tmp/tmp483oTS/BolasLocas3.webm"></string>
                      <string role="key" value="checksum"></string>
                      <string value="0d8627f16d47c6ae9f89ffc7a4c5a46c"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2913,7 +2913,7 @@
                    <instance class="exe.engine.field.TextField">
                     <dictionary>
                      <string role="key" value="_id"></string>
-                     <int value="285"></int>
+                     <int value="294"></int>
                      <string role="key" value="_idevice"></string>
                      <none></none>
                      <string role="key" value="_instruc"></string>
@@ -2927,7 +2927,7 @@
                     </dictionary>
                    </instance>
                    <string role="key" value="_id"></string>
-                   <unicode value="32_129_2.19"></unicode>
+                   <unicode value="32_129_2.24"></unicode>
                    <string role="key" value="_imageResource"></string>
                    <instance class="exe.engine.resource.Resource" reference="48">
                     <dictionary>
@@ -2938,7 +2938,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="BolasLocas6.webm"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpqV8izw/BolasLocas6.webm"></string>
+                     <string value="/tmp/tmp483oTS/BolasLocas6.webm"></string>
                      <string role="key" value="checksum"></string>
                      <string value="05b8ee9ef5d1dee5aee7d653dad254c9"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2965,7 +2965,7 @@
                    <instance class="exe.engine.field.TextField">
                     <dictionary>
                      <string role="key" value="_id"></string>
-                     <int value="287"></int>
+                     <int value="296"></int>
                      <string role="key" value="_idevice"></string>
                      <none></none>
                      <string role="key" value="_instruc"></string>
@@ -2979,7 +2979,7 @@
                     </dictionary>
                    </instance>
                    <string role="key" value="_id"></string>
-                   <unicode value="32_129_2.20"></unicode>
+                   <unicode value="32_129_2.25"></unicode>
                    <string role="key" value="_imageResource"></string>
                    <instance class="exe.engine.resource.Resource" reference="49">
                     <dictionary>
@@ -2990,7 +2990,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="BolasLocas4.webm"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpqV8izw/BolasLocas4.webm"></string>
+                     <string value="/tmp/tmp483oTS/BolasLocas4.webm"></string>
                      <string role="key" value="checksum"></string>
                      <string value="31b080e52c29630b8e31ed65a73ff5b1"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3017,7 +3017,7 @@
                    <instance class="exe.engine.field.TextField">
                     <dictionary>
                      <string role="key" value="_id"></string>
-                     <int value="290"></int>
+                     <int value="299"></int>
                      <string role="key" value="_idevice"></string>
                      <none></none>
                      <string role="key" value="_instruc"></string>
@@ -3031,7 +3031,7 @@
                     </dictionary>
                    </instance>
                    <string role="key" value="_id"></string>
-                   <unicode value="32_129_2.21"></unicode>
+                   <unicode value="32_129_2.26"></unicode>
                    <string role="key" value="_imageResource"></string>
                    <instance class="exe.engine.resource.Resource" reference="50">
                     <dictionary>
@@ -3042,7 +3042,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="BolasLocas2.webm"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpqV8izw/BolasLocas2.webm"></string>
+                     <string value="/tmp/tmp483oTS/BolasLocas2.webm"></string>
                      <string role="key" value="checksum"></string>
                      <string value="8fc433ae7aa4009d2baabddf747d55e0"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3071,7 +3071,7 @@
               <string role="key" value="intlinks_to_anchors"></string>
               <dictionary></dictionary>
               <string role="key" value="nextImageId"></string>
-              <int value="22"></int>
+              <int value="27"></int>
               <string role="key" value="parentNode"></string>
               <reference key="40"></reference>
              </dictionary>
@@ -3204,7 +3204,7 @@
                    <instance class="exe.engine.field.TextField">
                     <dictionary>
                      <string role="key" value="_id"></string>
-                     <int value="291"></int>
+                     <int value="300"></int>
                      <string role="key" value="_idevice"></string>
                      <none></none>
                      <string role="key" value="_instruc"></string>
@@ -3218,7 +3218,7 @@
                     </dictionary>
                    </instance>
                    <string role="key" value="_id"></string>
-                   <unicode value="33_130_2.3"></unicode>
+                   <unicode value="33_130_2.4"></unicode>
                    <string role="key" value="_imageResource"></string>
                    <instance class="exe.engine.resource.Resource" reference="53">
                     <dictionary>
@@ -3229,7 +3229,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="BolasLocas7.webm"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpqV8izw/BolasLocas7.webm"></string>
+                     <string value="/tmp/tmp483oTS/BolasLocas7.webm"></string>
                      <string role="key" value="checksum"></string>
                      <string value="815a58fc0d8e151869d1a6391bd8746c"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3258,7 +3258,7 @@
               <string role="key" value="intlinks_to_anchors"></string>
               <dictionary></dictionary>
               <string role="key" value="nextImageId"></string>
-              <int value="4"></int>
+              <int value="5"></int>
               <string role="key" value="parentNode"></string>
               <reference key="40"></reference>
              </dictionary>
@@ -4445,7 +4445,7 @@
   <string role="key" value="backgroundImgTile"></string>
   <bool value="0"></bool>
   <string role="key" value="currentNode"></string>
-  <reference key="3"></reference>
+  <reference key="14"></reference>
   <string role="key" value="dublinCore"></string>
   <instance class="exe.engine.package.DublinCore">
    <dictionary>
