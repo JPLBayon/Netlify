@@ -510,7 +510,7 @@
                    <instance class="exe.engine.field.TextField">
                     <dictionary>
                      <string role="key" value="_id"></string>
-                     <int value="315"></int>
+                     <int value="324"></int>
                      <string role="key" value="_idevice"></string>
                      <none></none>
                      <string role="key" value="_instruc"></string>
@@ -524,7 +524,7 @@
                     </dictionary>
                    </instance>
                    <string role="key" value="_id"></string>
-                   <unicode value="4_128_2.14"></unicode>
+                   <unicode value="4_128_2.16"></unicode>
                    <string role="key" value="_imageResource"></string>
                    <instance class="exe.engine.resource.Resource" reference="10">
                     <dictionary>
@@ -535,7 +535,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="captura_desde_2025_05_05_12_16_48.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpMEt63T/captura_desde_2025_05_05_12_16_48.png"></string>
+                     <string value="/tmp/tmp14UIod/captura_desde_2025_05_05_12_16_48.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="4e67fa58878a3558b74e201709adc214"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -562,7 +562,7 @@
                    <instance class="exe.engine.field.TextField">
                     <dictionary>
                      <string role="key" value="_id"></string>
-                     <int value="316"></int>
+                     <int value="325"></int>
                      <string role="key" value="_idevice"></string>
                      <none></none>
                      <string role="key" value="_instruc"></string>
@@ -576,7 +576,7 @@
                     </dictionary>
                    </instance>
                    <string role="key" value="_id"></string>
-                   <unicode value="4_128_2.15"></unicode>
+                   <unicode value="4_128_2.17"></unicode>
                    <string role="key" value="_imageResource"></string>
                    <instance class="exe.engine.resource.Resource" reference="11">
                     <dictionary>
@@ -587,7 +587,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="img0.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpMEt63T/img0.png"></string>
+                     <string value="/tmp/tmp14UIod/img0.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="da2fab58ae6b5449c758b84e3a9f7b9b"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -616,7 +616,7 @@
               <string role="key" value="intlinks_to_anchors"></string>
               <dictionary></dictionary>
               <string role="key" value="nextImageId"></string>
-              <int value="16"></int>
+              <int value="18"></int>
               <string role="key" value="parentNode"></string>
               <reference key="7"></reference>
              </dictionary>
@@ -2754,7 +2754,7 @@
                    <instance class="exe.engine.field.TextField">
                     <dictionary>
                      <string role="key" value="_id"></string>
-                     <int value="313"></int>
+                     <int value="322"></int>
                      <string role="key" value="_idevice"></string>
                      <none></none>
                      <string role="key" value="_instruc"></string>
@@ -2768,7 +2768,7 @@
                     </dictionary>
                    </instance>
                    <string role="key" value="_id"></string>
-                   <unicode value="31_128_2.11"></unicode>
+                   <unicode value="31_128_2.12"></unicode>
                    <string role="key" value="_imageResource"></string>
                    <instance class="exe.engine.resource.Resource" reference="46">
                     <dictionary>
@@ -2779,7 +2779,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="BolasLocas1.webm"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpMEt63T/BolasLocas1.webm"></string>
+                     <string value="/tmp/tmp14UIod/BolasLocas1.webm"></string>
                      <string role="key" value="checksum"></string>
                      <string value="42194c893801b4f920192e6f62f828fb"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2808,7 +2808,7 @@
               <string role="key" value="intlinks_to_anchors"></string>
               <dictionary></dictionary>
               <string role="key" value="nextImageId"></string>
-              <int value="12"></int>
+              <int value="13"></int>
               <string role="key" value="parentNode"></string>
               <reference key="43"></reference>
              </dictionary>
@@ -2964,7 +2964,7 @@
                    <instance class="exe.engine.field.TextField">
                     <dictionary>
                      <string role="key" value="_id"></string>
-                     <int value="310"></int>
+                     <int value="319"></int>
                      <string role="key" value="_idevice"></string>
                      <none></none>
                      <string role="key" value="_instruc"></string>
@@ -2978,7 +2978,7 @@
                     </dictionary>
                    </instance>
                    <string role="key" value="_id"></string>
-                   <unicode value="32_129_2.32"></unicode>
+                   <unicode value="32_129_2.37"></unicode>
                    <string role="key" value="_imageResource"></string>
                    <instance class="exe.engine.resource.Resource" reference="49">
                     <dictionary>
@@ -2989,7 +2989,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="BolasLocas5.webm"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpMEt63T/BolasLocas5.webm"></string>
+                     <string value="/tmp/tmp14UIod/BolasLocas5.webm"></string>
                      <string role="key" value="checksum"></string>
                      <string value="9d68e09ef59291ee5187bad0318d6051"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3016,7 +3016,7 @@
                    <instance class="exe.engine.field.TextField">
                     <dictionary>
                      <string role="key" value="_id"></string>
-                     <int value="311"></int>
+                     <int value="320"></int>
                      <string role="key" value="_idevice"></string>
                      <none></none>
                      <string role="key" value="_instruc"></string>
@@ -3030,7 +3030,7 @@
                     </dictionary>
                    </instance>
                    <string role="key" value="_id"></string>
-                   <unicode value="32_129_2.33"></unicode>
+                   <unicode value="32_129_2.38"></unicode>
                    <string role="key" value="_imageResource"></string>
                    <instance class="exe.engine.resource.Resource" reference="50">
                     <dictionary>
@@ -3041,7 +3041,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="BolasLocas3.webm"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpMEt63T/BolasLocas3.webm"></string>
+                     <string value="/tmp/tmp14UIod/BolasLocas3.webm"></string>
                      <string role="key" value="checksum"></string>
                      <string value="0d8627f16d47c6ae9f89ffc7a4c5a46c"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3068,7 +3068,7 @@
                    <instance class="exe.engine.field.TextField">
                     <dictionary>
                      <string role="key" value="_id"></string>
-                     <int value="312"></int>
+                     <int value="321"></int>
                      <string role="key" value="_idevice"></string>
                      <none></none>
                      <string role="key" value="_instruc"></string>
@@ -3082,7 +3082,7 @@
                     </dictionary>
                    </instance>
                    <string role="key" value="_id"></string>
-                   <unicode value="32_129_2.34"></unicode>
+                   <unicode value="32_129_2.39"></unicode>
                    <string role="key" value="_imageResource"></string>
                    <instance class="exe.engine.resource.Resource" reference="51">
                     <dictionary>
@@ -3093,7 +3093,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="BolasLocas6.webm"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpMEt63T/BolasLocas6.webm"></string>
+                     <string value="/tmp/tmp14UIod/BolasLocas6.webm"></string>
                      <string role="key" value="checksum"></string>
                      <string value="05b8ee9ef5d1dee5aee7d653dad254c9"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3120,7 +3120,7 @@
                    <instance class="exe.engine.field.TextField">
                     <dictionary>
                      <string role="key" value="_id"></string>
-                     <int value="314"></int>
+                     <int value="323"></int>
                      <string role="key" value="_idevice"></string>
                      <none></none>
                      <string role="key" value="_instruc"></string>
@@ -3134,7 +3134,7 @@
                     </dictionary>
                    </instance>
                    <string role="key" value="_id"></string>
-                   <unicode value="32_129_2.35"></unicode>
+                   <unicode value="32_129_2.40"></unicode>
                    <string role="key" value="_imageResource"></string>
                    <instance class="exe.engine.resource.Resource" reference="52">
                     <dictionary>
@@ -3145,7 +3145,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="BolasLocas4.webm"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpMEt63T/BolasLocas4.webm"></string>
+                     <string value="/tmp/tmp14UIod/BolasLocas4.webm"></string>
                      <string role="key" value="checksum"></string>
                      <string value="31b080e52c29630b8e31ed65a73ff5b1"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3172,7 +3172,7 @@
                    <instance class="exe.engine.field.TextField">
                     <dictionary>
                      <string role="key" value="_id"></string>
-                     <int value="317"></int>
+                     <int value="326"></int>
                      <string role="key" value="_idevice"></string>
                      <none></none>
                      <string role="key" value="_instruc"></string>
@@ -3186,7 +3186,7 @@
                     </dictionary>
                    </instance>
                    <string role="key" value="_id"></string>
-                   <unicode value="32_129_2.36"></unicode>
+                   <unicode value="32_129_2.41"></unicode>
                    <string role="key" value="_imageResource"></string>
                    <instance class="exe.engine.resource.Resource" reference="53">
                     <dictionary>
@@ -3197,7 +3197,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="BolasLocas2.webm"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpMEt63T/BolasLocas2.webm"></string>
+                     <string value="/tmp/tmp14UIod/BolasLocas2.webm"></string>
                      <string role="key" value="checksum"></string>
                      <string value="8fc433ae7aa4009d2baabddf747d55e0"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3226,7 +3226,7 @@
               <string role="key" value="intlinks_to_anchors"></string>
               <dictionary></dictionary>
               <string role="key" value="nextImageId"></string>
-              <int value="37"></int>
+              <int value="42"></int>
               <string role="key" value="parentNode"></string>
               <reference key="43"></reference>
              </dictionary>
@@ -3359,7 +3359,7 @@
                    <instance class="exe.engine.field.TextField">
                     <dictionary>
                      <string role="key" value="_id"></string>
-                     <int value="318"></int>
+                     <int value="327"></int>
                      <string role="key" value="_idevice"></string>
                      <none></none>
                      <string role="key" value="_instruc"></string>
@@ -3373,7 +3373,7 @@
                     </dictionary>
                    </instance>
                    <string role="key" value="_id"></string>
-                   <unicode value="33_130_2.6"></unicode>
+                   <unicode value="33_130_2.7"></unicode>
                    <string role="key" value="_imageResource"></string>
                    <instance class="exe.engine.resource.Resource" reference="56">
                     <dictionary>
@@ -3384,7 +3384,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="BolasLocas7.webm"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="/tmp/tmpMEt63T/BolasLocas7.webm"></string>
+                     <string value="/tmp/tmp14UIod/BolasLocas7.webm"></string>
                      <string role="key" value="checksum"></string>
                      <string value="815a58fc0d8e151869d1a6391bd8746c"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3413,7 +3413,7 @@
               <string role="key" value="intlinks_to_anchors"></string>
               <dictionary></dictionary>
               <string role="key" value="nextImageId"></string>
-              <int value="7"></int>
+              <int value="8"></int>
               <string role="key" value="parentNode"></string>
               <reference key="43"></reference>
              </dictionary>
@@ -3981,13 +3981,60 @@
               <string role="key" value="anchors_linked_from_fields"></string>
               <dictionary></dictionary>
               <string role="key" value="content_w_resourcePaths"></string>
-              <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;El producto final se debe de acompañar de una infografía en la que se expongan distintas fases de desarrollo del videojuego y las instrucciones del juego para los jugadores y jugadoras, incluyendo tanto texto como elementos multimedia.&lt;/p&gt;
-&lt;p&gt;Para la realización de la infografía se puede utilizar, entre otras, cualquiera de las herramientas siguientes:&lt;/p&gt;
-&lt;ul&gt;
+              <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;El producto final se debe de acompañar de una infografía que se elaborará según las pautas que se exponen a continuación.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tema&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 2em;&quot;&gt;Descripción de distintas fases de desarrollo del videojuego y de las instrucciones del juego para los jugadores y jugadoras, incluyendo tanto texto como elementos multimedia.&lt;/p&gt;
+&lt;p style=&quot;padding-left: 2em;&quot;&gt;El grupo usará esta infografía para exponer el desarrollo y funcionamiento del videojuego ante sus compañeros de clase.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sobre el trabajo en grupo&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 2em;&quot;&gt;Se recomienda que los miembros del grupo se organicen para adoptar los siguientes roles (con posibilidad de rotación):&lt;/p&gt;
+&lt;ul style=&quot;padding-left: 4em;&quot;&gt;
+&lt;li&gt;Coordinador/a: supervisa el trabajo general asegurando la participación de todos los miembros del grupo.&lt;/li&gt;
+&lt;li&gt;Investigador/a: se encarga de buscar información relevante.&lt;/li&gt;
+&lt;li&gt;Redactor/a: elabora los textos de la infografía.&lt;/li&gt;
+&lt;li&gt;Diseñador/a: se encarga del aspecto visual: colores, disposición, elementos multimedia, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Herramientas software&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 2em;&quot;&gt;Para la realización de la infografía se puede utilizar, entre otras, cualquiera de las herramientas siguientes:&lt;/p&gt;
+&lt;ul style=&quot;padding-left: 4em;&quot;&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.canva.com/es_es/&quot;&gt;Canva&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://desygner.com/es/plantillas-gratis/banner-web/infografia-ejemplos/&quot;&gt;Designer&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://create.vista.com/es/create/infographics/&quot;&gt;VistaCreate&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.adobe.com/es/express/create/infographic&quot;&gt;Adobe Express&lt;/a&gt;&lt;a href=&quot;https://www.canva.com/es_es/&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;padding-left: 2em;&quot;&gt;Una vez decidida qué herramienta vais a utilizar:&lt;/p&gt;
+&lt;ul style=&quot;padding-left: 4em;&quot;&gt;
+&lt;li&gt;Consultad los tutoriales proporcionados por la web oficial del producto.&lt;/li&gt;
+&lt;li&gt;Preguntad al profesor/a si tenéis dudas técnicas.&lt;/li&gt;
+&lt;li&gt;Antes de comenzar la elaboración, planificad el diseño en papel.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Recomendaciones sobre comunicación visual y modelos&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 2em;&quot;&gt;Una infografía bien hecha permite comprender de un solo vistazo el tema que se expone. Algunas estrategias útiles son:&lt;/p&gt;
+&lt;ul style=&quot;padding-left: 4em;&quot;&gt;
+&lt;li&gt;Uso de diagramas que muestren procesos o relaciones.&lt;/li&gt;
+&lt;li&gt;Organización de ideas mediante mapas conceptuales.&lt;/li&gt;
+&lt;li&gt;Uso de tablas comparativas para mostrar similitudes y diferencias.&lt;/li&gt;
+&lt;li&gt;Uso de iconos, imágenes, flechas y colores para reforzar el mensaje, evitando la sobrecarga visual.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Indicaciones acerca de los derechos de autor&lt;/strong&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Para el uso de contenidos obtenidos mediante búsquedas en Internet (textos, imágenes, gráficos, videos, etc) es fundamental el respeto a los derechos de autor. Aquí tenéis algunas pautas básicas para su uso:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Utilizad recursos que se publiquen bajo licencias &lt;a href=&quot;https://creativecommons.org/&quot;&gt;Creative Commons&lt;/a&gt;, comprobando las condiciones específicas de cada una (mencionar al autor/a, no usarlos con fines comerciales, etc.)&lt;/li&gt;
+&lt;li&gt;Recordad que dar crédito al autor/a original es una muestra de respeto y honestidad.&lt;/li&gt;
+&lt;li&gt;Buscad recursos en bancos gratuitos, por ejemplo:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://pixabay.com/&quot;&gt;Pixabay&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.flaticon.es/&quot;&gt;Flaticon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/Main_Page&quot;&gt;Wikimedia Commons&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Intentad crear vuestro propio contenido siempre que sea posible.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Consideraciones acerca de la accesibilidad&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Elegid tipografías claras y legibles, sin adornos innecesarios.&lt;/li&gt;
+&lt;li&gt;Usad tamaños de letra adecuados (mínimo 12-14 pt para textos y mayor para títulos).&lt;/li&gt;
+&lt;li&gt;Combinad colores con suficiente contraste entre fondo y texto. Evitad colores muy brillantes juntos.&lt;/li&gt;
+&lt;li&gt;Recordad que una infografía accesible es una infografía inclusiva.&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;"></unicode>
               <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
               <int value="4"></int>
@@ -4602,7 +4649,7 @@
   <string role="key" value="backgroundImgTile"></string>
   <bool value="0"></bool>
   <string role="key" value="currentNode"></string>
-  <reference key="3"></reference>
+  <reference key="66"></reference>
   <string role="key" value="dublinCore"></string>
   <instance class="exe.engine.package.DublinCore">
    <dictionary>
